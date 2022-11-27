@@ -468,12 +468,12 @@ class _Home extends State<Home> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Ruangan Panas",
+                              "lorem ipsum",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
-                              "Free Condom",
+                              "lorem ipsum1",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                             ),

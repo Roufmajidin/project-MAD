@@ -64,7 +64,7 @@ class LoginView extends GetView<LoginController> {
           showCursor: false,
           textCapitalization: TextCapitalization.sentences,
           decoration: InputDecoration(
-            hintText: 'JohnDoe@gmail.com',
+            hintText: 'Email',
             hintStyle: TextStyle(color: Colors.grey.shade600),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -90,7 +90,7 @@ class LoginView extends GetView<LoginController> {
           obscureText: true,
           textCapitalization: TextCapitalization.sentences,
           decoration: InputDecoration(
-            hintText: 'Enter your password',
+            hintText: 'password',
             hintStyle: TextStyle(color: Colors.grey.shade600),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -158,10 +158,8 @@ class LoginView extends GetView<LoginController> {
                   Colors.transparent,
                 ),
               ),
-              onPressed: () {
-                Get.to(Home());
-              },
-              child: const Text('LOGIN',
+              onPressed: () {},
+              child: const Text('REGISTER',
                   style: TextStyle(color: Colors.white, fontSize: 16))),
         ),
       ),
@@ -197,7 +195,9 @@ class LoginView extends GetView<LoginController> {
                   Colors.transparent,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Get.to(Home());
+              },
               child: const Text('LOGIN',
                   style: TextStyle(color: Colors.white, fontSize: 16))),
         ),
